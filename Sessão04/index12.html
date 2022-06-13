@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão 04 - aula 12</title>
+</head>
+<body>
+    <h1>Sessão 04 - aula 12</h1>
+    <script>
+        // Escopo de variaveis
+
+        function somar(num1, num2){
+            // Variavel local (Só é reconhecida dentro do bloco da função)
+            var valor = 5; // variavel local
+            return valor + num1 + num2;
+        }
+
+        for(var i = 0; i < 5; i++){
+            var outra = 5; // variavel global
+            console.log(i * outra);
+        }
+
+
+        console.log(somar(4, 6));
+
+        //console.log(valor); //referenceError - declarado em um bloco funcion
+
+        console.log(outra) // temos acesso pois foi declarado em um bloco for
+        
+        for(var j = 0; j < 5; j++){
+            let uma = 12; // variavel local com o let
+            console.log(j * uma);
+        }
+
+        console.log(uma);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+class Pessoa {
+
+}
+class Carro {
+    
+}

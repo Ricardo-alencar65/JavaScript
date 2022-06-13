@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão 04 - aula 03</title>
+</head>
+<body>
+    <h1>Sessão 04 - aula 03</h1>
+    <script>
+       var idade = 13;
+
+       if(idade >= 18){
+           console.log("Maior de idade");
+       }else{
+           console.log("menor de idade");
+       }
+       if(idade <= 14){
+            console.log("criança")
+       }else if(idade >> 14 && idade << 18){
+           console.log("adolescente")
+       }
+       else{
+            console.log("adulto")
+       }
+
+       //dica (verifica valor)
+       if(1 == "1"){
+           console.log("sim é um")
+       }else{
+           console.log("não é igual a um")
+       }
+       //Dica (verifica valor e tipo de dado)
+       if(1 === "1"){
+           console.log("sim é um")
+       }else{
+           console.log("não é igual a um")
+       }
+
+       //------------------------------------------------------------
+       var num = 42;
+       var stringnum = "42"
+
+       if(num == "42"){
+           console.log("sim é 42")
+       }else{
+           console.log("não é igual a 42")
+       }
+       
+       if(num === "42"){
+           console.log("sim é 42")
+       }else{
+           console.log("não é igual a 42")
+       }
+
+       var sexo = 'm';
+
+       switch(sexo){
+           case 'm':
+                console.log("masculino");
+                break;
+            case 'f':
+                console.log("feminino");
+                break;
+            default:
+                console.log("desconhecido");
+                break;
+
+       }
+
+       var s = "m";
+       var masculino;
+
+       if(s === "m"){
+           masculino = true;
+       }else{
+           masculino = false;
+       }
+
+       console.log(masculino);
+
+       //simplificando
+       //var masc = (s === "m");
+       var masc = s === "m";
+       console.log(masc);
+
+       
+    </script>
+</body>
+</html>
